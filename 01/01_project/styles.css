@@ -1,0 +1,77 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff7d6; /* pan */
+  color: #2b2b2b;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0 0 12px 0;
+}
+
+#app {
+  max-width: 520px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 3px solid #d62828; /* rojo ketchup */
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+#addOrderBtn {
+  width: 100%;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 12px;
+  background: #fcbf49; /* amarillo queso */
+  color: #111;
+  font-weight: bold;
+  cursor: pointer;
+  transition:
+    transform 0.05s ease,
+    opacity 0.2s ease;
+}
+
+#addOrderBtn:hover {
+  opacity: 0.95;
+}
+
+#addOrderBtn:active {
+  transform: scale(0.99);
+}
+
+#orderList {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 0 0;
+}
+
+#orderList li {
+  margin: 10px 0;
+  padding: 12px 12px;
+  border-radius: 12px;
+  border: 2px solid #fcbf49; /* queso */
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#orderList li::before {
+  content: "🍔";
+  margin-right: 10px;
+}
+
+#orderList li {
+  gap: 10px;
+}
+
+/* Opcional: si quieres diferenciar completados, agrega esta clase desde JS */
+.completed {
+  border-color: #2a9d8f;
+  background: #e7fff9;
+}

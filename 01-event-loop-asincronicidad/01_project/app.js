@@ -34,4 +34,16 @@ async function processOrder(order) {
     // TODO: Actualizar el estado del pedido a "Completado"
     order.status = 'Completado';
     updateOrderStatus(order, order.status); // Actualizar la visualización del pedido
+
+    await new Promise((resolve) => {
+        setTimeout(() => {
+            resolve();
+        }, 10000); // Esperar 10 segundos antes de eliminar el pedido
+    })
+
+    //Eliminar el pedido de la lista
+    const listItem = document.getElementById(`order-${order.id}`);
+    if (listItem) {
+        orderList.removeChild(listItem);
+    }
 }

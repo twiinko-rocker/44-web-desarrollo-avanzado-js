@@ -1,0 +1,99 @@
+/* Fuente futurista (opcional pero recomendada) */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Orbitron", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0f2027, #000);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #e0f7ff;
+}
+
+/* Título */
+h2 {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #00f7ff;
+  text-shadow: 0 0 10px rgba(0, 247, 255, 0.8);
+}
+
+/* Formulario */
+form {
+  background: rgba(15, 32, 39, 0.85);
+  border: 1px solid rgba(0, 247, 255, 0.3);
+  padding: 30px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 12px;
+  box-shadow:
+    0 0 20px rgba(0, 247, 255, 0.2),
+    inset 0 0 15px rgba(0, 247, 255, 0.1);
+  backdrop-filter: blur(6px);
+}
+
+/* Inputs */
+input {
+  background: transparent;
+  border: 1px solid rgba(0, 247, 255, 0.4);
+  padding: 12px;
+  border-radius: 6px;
+  color: #e0f7ff;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+input::placeholder {
+  color: rgba(224, 247, 255, 0.5);
+}
+
+input:focus {
+  border-color: #00f7ff;
+  box-shadow: 0 0 10px rgba(0, 247, 255, 0.8);
+}
+
+/* Botón */
+button {
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background: linear-gradient(135deg, #00f7ff, #6a00ff);
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 15px rgba(106, 0, 255, 0.8),
+    0 0 30px rgba(0, 247, 255, 0.6);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* Mensaje */
+#mensaje {
+  margin-top: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #9efaff;
+  text-shadow: 0 0 5px rgba(0, 247, 255, 0.5);
+}

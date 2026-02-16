@@ -1,0 +1,105 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Background */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #1e1e2f, #0b0b12);
+  color: #fff;
+}
+
+/* Form container */
+#myForm {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2.2rem;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 14px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Field wrapper */
+#myForm div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+/* Labels */
+label {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.4rem;
+  color: #9ffcff;
+  text-transform: uppercase;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"] {
+  padding: 0.7rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+/* Placeholder */
+input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Focus effect */
+input:focus {
+  border-color: #00f7ff;
+  box-shadow: 0 0 10px rgba(0, 247, 255, 0.6);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Error text */
+#errorField {
+  min-height: 1.2rem;
+  font-size: 0.8rem;
+  color: #ff5f5f;
+  margin-bottom: 1rem;
+}
+
+/* Submit button */
+input[type="submit"] {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #001014;
+  background: linear-gradient(135deg, #00f7ff, #00c6ff);
+  transition: all 0.3s ease;
+}
+
+/* Button hover */
+input[type="submit"]:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(0, 247, 255, 0.5);
+}
+
+/* Button active */
+input[type="submit"]:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 15px rgba(0, 247, 255, 0.3);
+}
